@@ -79,8 +79,9 @@ namespace Csharp_practice
                 {
                     int[] arr1 = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
                     int x = arr1[0], y = arr1[1];
+                    matrix = union(matrix,x,y);
                 }
-
+                Console.WriteLine(matrix.Count);
             }
 
         }
